@@ -1,7 +1,8 @@
 :root {
   --branding-color: #1e8077;
-  --primary-color: #6b5b43;
-  --secondary-color: #f8f8f0;
+  --primary-color: #907be6;
+  --buttons-color: #75506a;
+  --secondary-color: #feecf8;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
