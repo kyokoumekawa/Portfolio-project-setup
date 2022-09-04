@@ -71,6 +71,10 @@ p {
   font-family: var(--default-font-family);
 }
 
+.content-container {
+  padding: 60px 20px;
+}
+
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
@@ -108,33 +112,16 @@ p {
 }
 
 .logo {
-  max-width: 150px;
-}
-nav {
-  padding: 20px 0;
+  max-width: 40px;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
+.nav-item {
+  padding: 0 10px;
+  line-height: 14px;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #75506a;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
+.active {
+  color: var(--primary-color) !important;
 }
 
 @media (max-width: 900px) {
