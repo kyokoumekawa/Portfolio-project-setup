@@ -120,6 +120,10 @@ p {
   line-height: 14px;
 }
 
+.nav a {
+    transition: all 100ms ease-in-out;
+}
+
 .active {
   color: var(--primary-color) !important;
 }
