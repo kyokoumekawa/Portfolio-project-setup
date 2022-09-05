@@ -1,8 +1,11 @@
 :root {
-  --branding-color: #1e8077;
+  --branding-color: #f97475;
   --primary-color: #907be6;
-  --buttons-color: #75506a;
   --secondary-color: #fef3f3;
+  --buttons-color: #f97475;
+  --secondary-color: #fef3f3;
+  --paragraph-color: #464646;
+  --third-color: #989595;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -17,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--primary-color);
+  color: var(--paragraph-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
@@ -32,8 +35,12 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
-  color: var(--primary-color);
+  color: var(--paragraph-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -90,7 +97,7 @@ p {
 }
 
 .btn-branding {
-  background: var(--primary-color);
+  background: var(--branding-color);
   border-radius: 4px;
   color: #f8f8f0;
   font-size: 18px;
@@ -99,8 +106,8 @@ p {
 }
 
 .btn-branding-outline {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
@@ -121,11 +128,51 @@ p {
 }
 
 .nav a {
-    transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .active {
   color: var(--primary-color) !important;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
 }
 
 @media (max-width: 900px) {
@@ -135,6 +182,10 @@ p {
   }
   h2 {
     font-size: 44px;
+  }
+
+  h4 {
+    font-size: 26px;
   }
 
   .hero {
@@ -150,4 +201,6 @@ p {
     padding: 0;
     text-align: center;
   }
+
+  
 }
