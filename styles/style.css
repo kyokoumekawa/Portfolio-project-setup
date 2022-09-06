@@ -3,7 +3,6 @@
   --primary-color: #907be6;
   --secondary-color: #fef3f3;
   --buttons-color: #f97475;
-  --secondary-color: #fef3f3;
   --paragraph-color: #464646;
   --third-color: #989595;
   --heading-font-family: "Playfair Display", serif;
@@ -48,7 +47,7 @@ p {
 .hero {
   background-color: var(--secondary-color);
   text-align: left;
-  padding: 160px 100px;
+  padding: 140px 100px;
 }
 
 .hero p {
@@ -145,7 +144,7 @@ span::before {
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 20px 60px;
 }
 
 .logo {
@@ -163,6 +162,15 @@ span::before {
 
 .active {
   color: var(--branding-color) !important;
+}
+
+.tool-list {
+  color: var(--branding-color);
+}
+
+.tool-list i {
+  padding: 0 10px;
+  font-size: 30px;
 }
 
 footer {
