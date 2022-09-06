@@ -93,10 +93,6 @@ span::before {
   }
 }
 
-.content-container {
-  padding: 160px 20px;
-}
-
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -108,7 +104,8 @@ span::before {
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 90px 20px;
+  padding-bottom: 0;
 }
 
 .content h3 {
@@ -173,6 +170,20 @@ span::before {
   font-size: 30px;
 }
 
+.cta-button-contact {
+  margin-top: 0;
+}
+
+.cta-button:hover {
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+}
+
+.project-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
+}
+
 footer {
   margin: 60px 0;
 }
@@ -213,12 +224,32 @@ footer .social-links a:hover {
   background-color: var(--branding-color);
 }
 
+.social-links-contact a {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.social-links-contact a:hover {
+  color: var(--paragraph-color);
+}
+
+.contact-page {
+  margin-top: 80px;
+}
+
 .container-flip {
   position: relative;
   overflow: hidden;
   display: inline-block;
   width: 100%;
   height: 37px;
+}
+
+.my-memoji {
+  height: 500px;
+  width: 500px;
 }
 
 @media (max-width: 900px) {
