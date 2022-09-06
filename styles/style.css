@@ -279,3 +279,11 @@ footer .social-links a:hover {
     text-align: center;
   }
 }
+
+.tool-list i {
+  text-align: center;
+}
+
+.credit-bottom {
+  font-size: 10px;
+}
