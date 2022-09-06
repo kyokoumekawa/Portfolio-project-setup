@@ -47,13 +47,13 @@ p {
 }
 .hero {
   background-color: var(--secondary-color);
-  text-align: center;
-  padding: 160px 20px;
+  text-align: left;
+  padding: 160px 100px;
 }
 
 .hero p {
+  font-family: var(--default-font-family);
   font-size: 36px;
-  font-weight: bold;
   margin: 0;
 }
 
@@ -61,7 +61,37 @@ p {
   font-family: var(--default-font-family);
   font-weight: normal;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+span {
+  font-size: 60px;
+}
+
+span::before {
+  content: " ";
+  animation: animate infinite 7s;
+}
+
+@keyframes animate {
+  0% {
+    content: "a designer 🎨";
+  }
+  20% {
+    content: "a digital marketer 📱";
+  }
+  40% {
+    content: "an accountant 🏦";
+  }
+  60% {
+    content: "a world traveler 🌏";
+  }
+  80% {
+    content: "a gamer 👾";
+  }
+  100% {
+    content: "mother of cats 🐱";
+  }
 }
 
 .content-container {
@@ -119,7 +149,7 @@ p {
 }
 
 .logo {
-  max-width: 40px;
+  max-width: 60px;
 }
 
 .nav-item {
@@ -132,7 +162,7 @@ p {
 }
 
 .active {
-  color: var(--primary-color) !important;
+  color: var(--branding-color) !important;
 }
 
 footer {
@@ -175,6 +205,14 @@ footer .social-links a:hover {
   background-color: var(--branding-color);
 }
 
+.container-flip {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  height: 37px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -201,6 +239,4 @@ footer .social-links a:hover {
     padding: 0;
     text-align: center;
   }
-
-  
 }
