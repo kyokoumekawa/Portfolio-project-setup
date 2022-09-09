@@ -68,7 +68,7 @@ span {
   font-size: 60px;
 }
 
-span::before {
+.font::before {
   content: " ";
   animation: animate infinite 7s;
 }
