@@ -263,7 +263,8 @@ footer .social-links a:hover {
     font-size: 44px;
     line-height: 56px;
   }
-  h2 {
+  h2,
+  .font {
     font-size: 44px;
   }
 
@@ -284,12 +285,18 @@ footer .social-links a:hover {
     padding: 0;
     text-align: center;
   }
-}
 
-.tool-list i {
-  text-align: center;
-}
+  .tool-list i {
+    text-align: center;
+  }
 
-.credit-bottom {
-  font-size: 10px;
+  .credit-bottom {
+    font-size: 10px;
+  }
+
+  .open-sourced {
+    text-align: center;
+    font-size: 10px;
+  }
+
 }
